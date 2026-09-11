@@ -22,8 +22,8 @@ int main() {
     }
 
    
-    printf("Sorted: ");
-    for (int i = 0; i < size; i++) {
+    printf("Sorted descending: ");
+    for (int i = size - 1; i >= 0; i--) {
         printf("%d ", *(arr + i));
     }
     printf("\n");

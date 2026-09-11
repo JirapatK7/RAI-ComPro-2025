@@ -5,13 +5,17 @@ int main() {
     int size = sizeof(array) / sizeof(*(array));
 
     int max = *array; 
+    int min = *array;
     for (int i = 1; i < size; i++) {
         if (*(array + i) > max) {
             max = *(array + i);
         }
+        if (*(array + i) < min) {
+            min = *(array + i);
+        }
     }
 
     printf("Max value: %d\n", max);
-
+    printf("Min value: %d\n", min);
     return 0;
 }

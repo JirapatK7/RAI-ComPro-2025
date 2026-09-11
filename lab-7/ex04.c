@@ -5,7 +5,8 @@ int main() {
     int array[] = { 3, 1, 2, 4, 5, 6 };
     int *p = array; 
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 5; i >= 0; i--) {
+        p = array + i;
         printf("%d\n", *p);
         p++; 
     }
